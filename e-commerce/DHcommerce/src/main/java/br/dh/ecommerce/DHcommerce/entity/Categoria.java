@@ -16,7 +16,7 @@ public class Categoria {
 
     private String nome;
 
-    @OneToMany(mappedBy ="categoria", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @OneToMany(mappedBy ="categoria", cascade = CascadeType.ALL)
     private Set<Produto> produto = new HashSet<>();
 
     public Categoria() {

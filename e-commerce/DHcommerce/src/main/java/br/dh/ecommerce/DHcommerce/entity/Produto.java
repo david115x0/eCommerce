@@ -10,7 +10,7 @@ public class Produto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private String titulos;
+    private String titulo;
     private float preco;
     private String descricao;
     private String imagem;
@@ -22,19 +22,21 @@ public class Produto {
     public Produto() {
     }
 
-    public Produto(String titulos, float preco, String descricao, String imagem) {
-        this.titulos = titulos;
+    public Produto(String titulo, float preco, String descricao, String imagem, Categoria categoria) {
+        this.titulo = titulo;
         this.preco = preco;
         this.descricao = descricao;
         this.imagem = imagem;
+        this.categoria = categoria;
     }
 
-    public Produto(Integer id, String titulos, float preco, String descricao, String imagem) {
+    public Produto(Integer id, String titulo, float preco, String descricao, String imagem, Categoria categoria) {
         this.id = id;
-        this.titulos = titulos;
+        this.titulo = titulo;
         this.preco = preco;
         this.descricao = descricao;
         this.imagem = imagem;
+        this.categoria = categoria;
     }
 
     public Integer getId() {
@@ -45,12 +47,12 @@ public class Produto {
         this.id = id;
     }
 
-    public String getTitulos() {
-        return titulos;
+    public String getTitulo() {
+        return titulo;
     }
 
-    public void setTitulos(String titulos) {
-        this.titulos = titulos;
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
     }
 
     public float getPreco() {
@@ -75,5 +77,13 @@ public class Produto {
 
     public void setImagem(String imagem) {
         this.imagem = imagem;
+    }
+
+    public Categoria getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(Categoria categoria) {
+        this.categoria = categoria;
     }
 }
