@@ -1,6 +1,7 @@
 package br.dh.ecommerce.DHcommerce.service;
 
 
+import br.dh.ecommerce.DHcommerce.dto.ProdutoDto;
 import br.dh.ecommerce.DHcommerce.entity.Produto;
 import br.dh.ecommerce.DHcommerce.repository.ProdutoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +23,16 @@ public class ProdutoService {
     }
 
     public Produto salvar(Produto produto) {
-        return produtoRepository.save(produto);
+
+//        Produto produto = new ProdutoDto(
+//                produtoDto.getTitulo(),
+//                produtoDto.getPreco(),
+//                produtoDto.getDescricao(),
+//                produtoDto.getImagem(),
+//                produtoDto.getCategoria()
+//        );
+        produtoRepository.save(produto);
+        return produto;
     }
     public Produto atualizar(Produto produto){
         return produtoRepository.save(produto);
