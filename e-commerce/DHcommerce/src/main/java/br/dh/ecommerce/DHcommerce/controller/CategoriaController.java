@@ -33,7 +33,7 @@ public class CategoriaController {
     public ResponseEntity<Categoria> atualizar(@RequestBody Categoria categoria) {
         ResponseEntity<Categoria> response = null;
         if (categoria.getId() != null && categoriaService.buscarPorId(categoria.getId()).isPresent())
-            response = ResponseEntity.ok(categoriaService.salvar(categoria));
+            response = ResponseEntity.ok(categoriaService.atualizar(categoria));
         else
             response = ResponseEntity.status(HttpStatus.NOT_FOUND).build();
         return response;

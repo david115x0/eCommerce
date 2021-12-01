@@ -1,7 +1,10 @@
 package br.dh.ecommerce.DHcommerce.service;
 
 
+import br.dh.ecommerce.DHcommerce.dto.ProdutoDto;
+import br.dh.ecommerce.DHcommerce.entity.Categoria;
 import br.dh.ecommerce.DHcommerce.entity.Produto;
+import br.dh.ecommerce.DHcommerce.repository.CategoriaRepository;
 import br.dh.ecommerce.DHcommerce.repository.ProdutoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -16,15 +19,36 @@ public class ProdutoService {
     @Autowired
     private ProdutoRepository produtoRepository;
 
+    @Autowired
+    private CategoriaRepository categoriaRepository;
 
-    public ProdutoService(ProdutoRepository produtoRepository) {
+
+    public ProdutoService(ProdutoRepository produtoRepository, CategoriaRepository categoriaRepository) {
         this.produtoRepository = produtoRepository;
+        this.categoriaRepository = categoriaRepository;
     }
 
-    public Produto salvar(Produto produto) {
-        return produtoRepository.save(produto);
+    public Produto salvar(ProdutoDto produtoDto) {
+        Categoria categoria = (Categoria) categoriaRepository.findById(produtoDto.getCategoria()).get();
+        Produto produto = new Produto(
+                produtoDto.getTitulo(),
+                produtoDto.getPreco(),
+                produtoDto.getDescricao(),
+                produtoDto.getImagem(),
+                categoria
+        );
+        produtoRepository.save(produto);
+        return produto;
     }
-    public Produto atualizar(Produto produto){
+    public Produto atualizar(ProdutoDto produtoDto){
+        Categoria categoria = (Categoria) categoriaRepository.findById(produtoDto.getCategoria()).get();
+        Produto produto = new Produto(
+                produtoDto.getTitulo(),
+                produtoDto.getPreco(),
+                produtoDto.getDescricao(),
+                produtoDto.getImagem(),
+                categoria
+        );
         return produtoRepository.save(produto);
     }
     public void excluir(Integer id) {

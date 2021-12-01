@@ -1,8 +1,8 @@
 package br.dh.ecommerce.DHcommerce.controller;
 
 
+import br.dh.ecommerce.DHcommerce.dto.ProdutoDto;
 import br.dh.ecommerce.DHcommerce.entity.Produto;
-import br.dh.ecommerce.DHcommerce.service.CategoriaService;
 import br.dh.ecommerce.DHcommerce.service.ProdutoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -24,7 +24,7 @@ public class ProdutoController {
 
 
     @PostMapping()
-    public ResponseEntity<Produto> cadstrar(@RequestBody Produto produtoDto) {
+    public ResponseEntity<Produto> cadstrar(@RequestBody ProdutoDto produtoDto) {
         return ResponseEntity.ok(produtoService.salvar(produtoDto));
     }
 
@@ -34,10 +34,10 @@ public class ProdutoController {
     }
 
     @PutMapping
-    public ResponseEntity<Produto> atualizar(@RequestBody Produto produto) {
+    public ResponseEntity<Produto> atualizar(@RequestBody ProdutoDto produtoDto) {
         ResponseEntity<Produto> response = null;
-        if (produto.getId() != null && produtoService.buscarPorId(produto.getId()).isPresent())
-            response = ResponseEntity.ok(produtoService.salvar(produto));
+        if (produtoDto.getCategoria() != null && produtoService.buscarPorId(produtoDto.getCategoria()).isPresent())
+            response = ResponseEntity.ok(produtoService.atualizar(produtoDto));
         else
             response = ResponseEntity.status(HttpStatus.NOT_FOUND).build();
         return response;
