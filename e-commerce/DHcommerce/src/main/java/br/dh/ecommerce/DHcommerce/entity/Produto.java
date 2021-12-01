@@ -1,6 +1,8 @@
 package br.dh.ecommerce.DHcommerce.entity;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import javax.persistence.*;
 
 @Entity
@@ -17,6 +19,7 @@ public class Produto {
 
     @ManyToOne( cascade = CascadeType.ALL,fetch = FetchType.LAZY)
     @JoinColumn(name = "categoria_id")
+    @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
     private Categoria categoria;
 
     public Produto() {

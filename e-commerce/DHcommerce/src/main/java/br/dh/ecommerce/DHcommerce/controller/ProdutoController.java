@@ -14,8 +14,14 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/produtos")
 public class ProdutoController {
 
+
+    private ProdutoService produtoService;
+
     @Autowired
-    private ProdutoService produtoService = new ProdutoService(new CategoriaService());
+    public ProdutoController(ProdutoService produtoService) {
+        this.produtoService = produtoService;
+    }
+
 
     @PostMapping()
     public ResponseEntity<Produto> cadstrar(@RequestBody Produto produtoDto) {

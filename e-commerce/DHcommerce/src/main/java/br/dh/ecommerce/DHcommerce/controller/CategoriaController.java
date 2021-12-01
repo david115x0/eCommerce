@@ -12,9 +12,12 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/categorias")
 public class CategoriaController {
 
+    private CategoriaService categoriaService;
 
     @Autowired
-    private CategoriaService categoriaService = new CategoriaService();
+    public CategoriaController(CategoriaService categoriaService) {
+        this.categoriaService = categoriaService;
+    }
 
     @PostMapping()
     public ResponseEntity<Categoria> cadstrar(@RequestBody Categoria categoria) {

@@ -2,6 +2,8 @@ package br.dh.ecommerce.DHcommerce.entity;
 
 
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
@@ -17,6 +19,7 @@ public class Categoria {
     private String nome;
 
     @OneToMany(mappedBy ="categoria", cascade = CascadeType.ALL)
+    @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
     private Set<Produto> produto = new HashSet<>();
 
     public Categoria() {

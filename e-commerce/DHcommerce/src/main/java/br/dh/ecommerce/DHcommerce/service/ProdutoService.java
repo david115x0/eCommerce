@@ -3,7 +3,6 @@ package br.dh.ecommerce.DHcommerce.service;
 
 import br.dh.ecommerce.DHcommerce.entity.Produto;
 import br.dh.ecommerce.DHcommerce.repository.ProdutoRepository;
-import br.dh.ecommerce.DHcommerce.repository.configuracao.ConfiguracaoJDBC;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -17,10 +16,9 @@ public class ProdutoService {
     @Autowired
     private ProdutoRepository produtoRepository;
 
-    private CategoriaService categoriaService;
 
-    public ProdutoService(CategoriaService categoriaService) {
-        this.categoriaService = categoriaService;
+    public ProdutoService(ProdutoRepository produtoRepository) {
+        this.produtoRepository = produtoRepository;
     }
 
     public Produto salvar(Produto produto) {
