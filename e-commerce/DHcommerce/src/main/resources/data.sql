@@ -9,3 +9,5 @@ INSERT INTO PRODUTOS (titulo, preco, descricao, imagem, categoria_id) VALUES ('A
 INSERT INTO PRODUTOS (titulo, preco, descricao, imagem, categoria_id) VALUES ('irã',10000,'Viagem para o irã sem volta','url imagem',2);
 
 INSERT INTO PRODUTOS (titulo, preco, descricao, imagem, categoria_id) VALUES ('Páris',4000,'Viagem para portugal, com carro alugado ','Url imagem',3);
+
+INSERT INTO PRODUTOS (titulo, preco, descricao, imagem, categoria_id) VALUES ('Lisboa',3000,'Viagem para portugal, com carro alugado ','Url imagem',3);
