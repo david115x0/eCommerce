@@ -11,3 +11,5 @@ INSERT INTO PRODUTOS (titulo, preco, descricao, imagem, categoria_id) VALUES ('i
 INSERT INTO PRODUTOS (titulo, preco, descricao, imagem, categoria_id) VALUES ('Páris',4000,'Viagem para portugal, com carro alugado ','Url imagem',3);
 
 INSERT INTO PRODUTOS (titulo, preco, descricao, imagem, categoria_id) VALUES ('Lisboa',3000,'Viagem para portugal, com carro alugado ','Url imagem',3);
+
+INSERT INTO PRODUTOS (titulo, preco, descricao, imagem, categoria_id) VALUES ('Praga', 5000, 'Viagem para portugal, com carro alugado ','Url imagem',3);

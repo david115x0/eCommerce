@@ -34,7 +34,7 @@ public class ProdutosCategoriaController {
     }
 
     @GetMapping("/{nomeCategoria}")
-    public ResponseEntity<Produto> buscarPorNome(@PathVariable("nomeCategoria") String nomeCategoria) {
+    public ResponseEntity<List<Produto>> buscarPorNome(@PathVariable("nomeCategoria") String nomeCategoria) {
        return ResponseEntity.ok(produtoService.findByName(nomeCategoria));
     }
 }
