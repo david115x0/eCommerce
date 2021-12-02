@@ -39,8 +39,9 @@ public class CategoriaService {
         return categoriaRepository.findAll();
     }
 
+    // EndPoint get JSON com todas as categorias
     public List<String> buscarTodosNomes() {
-        List<String> nomes = new ArrayList<String>();
+        List<String> nomes = new ArrayList<>();
 
         for (Categoria categoria :  categoriaRepository.findAll()) {
            String nome = categoria.getNome();

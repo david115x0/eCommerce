@@ -65,18 +65,19 @@ public class ProdutoService {
     }
 
     // EndPoint para buscar por nome
+    // Todo: Descobir como pegar todos os dados dos produtos relacioandos a categoria
 
     public List<Produto> findByName(String nomeCategoria){
 
-        List<Produto> produtosSelecionados = new ArrayList<Produto>();
+        List<Produto> produtoSelecionado = new ArrayList<Produto>();
 
         for (Produto produto :
              produtoRepository.findAll()) {
             if (produto.getCategoria().getNome().equalsIgnoreCase(nomeCategoria)) {
-                produtosSelecionados.add(produto);
+                produtoSelecionado.add(produto);
             }
         }
 
-        return produtosSelecionados;
+        return produtoSelecionado;
     }
 }
