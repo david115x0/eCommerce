@@ -17,7 +17,6 @@ import java.util.List;
 @RequestMapping("/produtos/categorias")
 public class ProdutosCategoriaController {
 
-    // To do: Dois últimos brekpoints
     private CategoriaService categoriaService;
     private ProdutoService produtoService;
 

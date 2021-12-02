@@ -64,11 +64,10 @@ public class ProdutoService {
         return produtoRepository.findAll();
     }
 
-    // EndPoint para buscar por nome
-
+    // Endpoit get JSON produtos por nome de categoria
     public List<Produto> findByName(String nomeCategoria){
 
-        List<Produto> produtosSelecionados = new ArrayList<Produto>();
+        List<Produto> produtosSelecionados = new ArrayList<>();
 
         for (Produto produto :
              produtoRepository.findAll()) {
