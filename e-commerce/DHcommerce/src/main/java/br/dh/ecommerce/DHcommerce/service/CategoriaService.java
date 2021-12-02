@@ -1,15 +1,12 @@
 package br.dh.ecommerce.DHcommerce.service;
 
 
-import br.dh.ecommerce.DHcommerce.dto.CategoriaDto;
 import br.dh.ecommerce.DHcommerce.entity.Categoria;
 import br.dh.ecommerce.DHcommerce.repository.CategoriaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Example;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
@@ -41,9 +38,15 @@ public class CategoriaService {
         return categoriaRepository.findAll();
     }
 
-    //public List<Categoria> buscarTodosNome(CategoriaDto categoriaDto) {
-      //  return categoriaRepository.findB
-    //}
+    public List buscarTodosNomes() {
+        List nomes = new ArrayList<String>();
+
+        for (Categoria categoria :  categoriaRepository.findAll()) {
+           String nome = categoria.getNome();
+           nomes.add(nome);
+        }
+        return nomes;
+    }
 
     //public List<Categoria> findByName(String nomeCategoria){
     //    return categoriaRepository.findByName(nomeCategoria);
