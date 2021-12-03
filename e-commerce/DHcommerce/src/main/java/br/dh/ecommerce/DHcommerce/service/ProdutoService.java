@@ -64,6 +64,7 @@ public class ProdutoService {
         return produtoRepository.findAll();
     }
 
+
     // Endpoit get JSON produtos por nome de categoria
     public List<Produto> findByName(String nomeCategoria){
 
