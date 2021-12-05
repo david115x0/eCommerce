@@ -2,7 +2,6 @@ package br.dh.ecommerce.DHcommerce.service;
 
 
 import br.dh.ecommerce.DHcommerce.entity.Categoria;
-import br.dh.ecommerce.DHcommerce.entity.Produto;
 import br.dh.ecommerce.DHcommerce.repository.CategoriaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

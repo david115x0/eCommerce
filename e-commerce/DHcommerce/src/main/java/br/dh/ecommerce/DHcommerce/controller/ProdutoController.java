@@ -2,7 +2,6 @@ package br.dh.ecommerce.DHcommerce.controller;
 
 
 import br.dh.ecommerce.DHcommerce.dto.ProdutoDto;
-import br.dh.ecommerce.DHcommerce.entity.Categoria;
 import br.dh.ecommerce.DHcommerce.entity.Produto;
 import br.dh.ecommerce.DHcommerce.service.ProdutoService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,9 +9,9 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
 
 
+@CrossOrigin(origins = "*", allowedHeaders = "")
 @RestController
 @RequestMapping("/produtos")
 public class ProdutoController {
