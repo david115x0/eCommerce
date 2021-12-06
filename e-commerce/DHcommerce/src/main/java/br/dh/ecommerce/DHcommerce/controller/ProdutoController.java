@@ -9,6 +9,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 
 
 @CrossOrigin(origins = "*", allowedHeaders = "")
@@ -30,9 +31,9 @@ public class ProdutoController {
         return ResponseEntity.ok(produtoService.salvar(produtoDto));
     }
 
-    @GetMapping("/{id}")
-    public ResponseEntity<Produto> buscarPorId(@PathVariable Integer id) {
-        return ResponseEntity.ok(produtoService.buscarPorId(id).orElse(null));
+    @GetMapping("/{nomeTitulo}")
+    public ResponseEntity<List<Produto>> burcarPorTitulo(@PathVariable("nomeTitulo") String nomeTitulo) {
+        return ResponseEntity.ok(produtoService.findByTitulo(nomeTitulo));
     }
 
     @PutMapping
@@ -62,6 +63,7 @@ public class ProdutoController {
 
         return ResponseEntity.ok(produtoService.buscarTodos());
     }
+
 
 
 }

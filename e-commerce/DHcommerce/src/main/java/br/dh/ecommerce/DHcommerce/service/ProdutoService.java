@@ -76,7 +76,19 @@ public class ProdutoService {
                 produtosSelecionados.add(produto);
             }
         }
-
         return produtosSelecionados;
     }
+    public List<Produto> findByTitulo(String nomeTitulo){
+
+        List<Produto> produtosSelecionados =  new ArrayList<>();
+
+        for (Produto produto :
+                produtoRepository.findAll()) {
+            if (produto.getTitulo().equalsIgnoreCase(nomeTitulo)) {
+                produtosSelecionados.add(produto);
+            }
+        }
+        return produtosSelecionados;
+    }
+
 }
