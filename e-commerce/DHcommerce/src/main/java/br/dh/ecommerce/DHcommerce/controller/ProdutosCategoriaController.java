@@ -1,6 +1,7 @@
 package br.dh.ecommerce.DHcommerce.controller;
 
 
+import br.dh.ecommerce.DHcommerce.entity.Categoria;
 import br.dh.ecommerce.DHcommerce.entity.Produto;
 import br.dh.ecommerce.DHcommerce.service.CategoriaService;
 import br.dh.ecommerce.DHcommerce.service.ProdutoService;
@@ -30,8 +31,5 @@ public class ProdutosCategoriaController {
         return ResponseEntity.ok(categoriaService.buscarTodosNomes());
     }
 
-    @GetMapping("/{nomeCategoria}")
-    public ResponseEntity<List<Produto>> buscarPorNome(@PathVariable("nomeCategoria") String nomeCategoria) {
-       return ResponseEntity.ok(produtoService.findByName(nomeCategoria));
-    }
+
 }

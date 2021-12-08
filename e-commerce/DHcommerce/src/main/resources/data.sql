@@ -24,4 +24,6 @@ INSERT INTO PRODUTOS (titulo, preco, descricao, imagem, categoria_id) VALUES ('J
 
 INSERT INTO PRODUTOS (titulo, preco, descricao, imagem, categoria_id) VALUES ('JavaScript',1800,'Curso javascript nivel avançado. necessário o domínio do nível básico.','https://miro.medium.com/max/724/1*YQgaKfVzK-YpxyT3NYqJAg.png',1);
 
+INSERT INTO PRODUTOS (titulo, preco, descricao, imagem, categoria_id) VALUES ('JavaScript',1800,'Curso javascript nivel avançado. necessário o domínio do nível básico.','https://miro.medium.com/max/724/1*YQgaKfVzK-YpxyT3NYqJAg.png',1);
+
 INSERT INTO PRODUTOS (titulo, preco, descricao, imagem, categoria_id) VALUES ('python', 5000, 'Curso python focado na automação de seriços web. Este curso comtemplará o nível avaçado, requer o conhecimento em outra linguagens.','https://me315-unicamp.github.io/aulas/imgs_aula11/python-logo.png',1);

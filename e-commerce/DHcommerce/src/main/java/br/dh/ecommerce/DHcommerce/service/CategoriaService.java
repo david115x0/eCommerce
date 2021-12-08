@@ -2,6 +2,7 @@ package br.dh.ecommerce.DHcommerce.service;
 
 
 import br.dh.ecommerce.DHcommerce.entity.Categoria;
+import br.dh.ecommerce.DHcommerce.entity.Produto;
 import br.dh.ecommerce.DHcommerce.repository.CategoriaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -47,6 +48,18 @@ public class CategoriaService {
            nomes.add(nome);
         }
         return nomes;
+    }
+    public List<Categoria> findByName(String nomeCategoria){
+
+        List<Categoria> produtosSelecionados = new ArrayList<>();
+
+        for (Categoria categoria :
+                categoriaRepository.findAll()) {
+            if (categoria.getNome().equalsIgnoreCase(nomeCategoria)) {
+                produtosSelecionados.add(categoria);
+            }
+        }
+        return produtosSelecionados;
     }
 
 }
