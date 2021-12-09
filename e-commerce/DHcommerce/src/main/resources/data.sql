@@ -2,7 +2,7 @@ INSERT INTO CATEGORIAS (nome) VALUES ('backend');
 
 INSERT INTO CATEGORIAS (nome) VALUES ('frontend');
 
-INSERT INTO CATEGORIAS (nome) VALUES ('desing');
+INSERT INTO CATEGORIAS (nome) VALUES ('design');
 
 
 
