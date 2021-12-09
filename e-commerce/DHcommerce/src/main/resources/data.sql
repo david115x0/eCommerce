@@ -20,7 +20,7 @@ INSERT INTO PRODUTOS (titulo, preco, descricao, imagem, categoria_id) VALUES ('A
 
 INSERT INTO PRODUTOS (titulo, preco, descricao, imagem, categoria_id) VALUES ('Java',2500,'Curso de java para iniciantes até o nível avançado. spring boot, Spring Data JPA e mais... ','https://img2.gratispng.com/20180805/iot/kisspng-logo-java-runtime-environment-programming-language-java-util-concurrentmodificationexception-%C3%96mer-5b6766ab2d98b8.1809687115335031471868.jpg',1);
 
-INSERT INTO PRODUTOS (titulo, preco, descricao, imagem, categoria_id) VALUES ('JavaScript',1200,'Curso javascript para iniciantes em programação.','https://www.cesar.org.br/wp-content/uploads/2017/07/curso-java-script-512x426.jpg',1);
+INSERT INTO PRODUTOS (titulo, preco, descricao, imagem, categoria_id) VALUES ('JavaScript',1200,'Curso javascript para iniciantes em programação.','https://github.com/Felipe00007/img/blob/main/Black%20Friday%20(1).png',1);
 
 INSERT INTO PRODUTOS (titulo, preco, descricao, imagem, categoria_id) VALUES ('JavaScript',1800,'Curso javascript nivel avançado. necessário o domínio do nível básico.','https://miro.medium.com/max/724/1*YQgaKfVzK-YpxyT3NYqJAg.png',1);
 
