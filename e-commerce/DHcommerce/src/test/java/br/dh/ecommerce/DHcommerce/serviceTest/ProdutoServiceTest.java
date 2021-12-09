@@ -1,8 +1,11 @@
 package br.dh.ecommerce.DHcommerce.serviceTest;
 
+import br.dh.ecommerce.DHcommerce.entity.Categoria;
 import br.dh.ecommerce.DHcommerce.entity.Produto;
+import br.dh.ecommerce.DHcommerce.repository.ProdutoRepository;
 import br.dh.ecommerce.DHcommerce.service.ProdutoService;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,10 +23,15 @@ public class ProdutoServiceTest {
     @Autowired
     private ProdutoService produtoService;
 
-    @Test
-    public void buscarPorIdTeste() {
-        Optional<Produto> produto = produtoService.buscarPorId(11);
+    @Before
+    public void popular() {
+        Categoria categoria = new Categoria(1, "categoriaTeste");
 
-        Assert.assertTrue(produto.isPresent());
+        Produto produto = new Produto(1, "teste", 100,
+                "teste", "#", categoria);
+
+        Produto produto1 = new Produto(2, "teste", 100,
+                "teste", "#", categoria);
     }
+
 }

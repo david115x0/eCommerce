@@ -30,7 +30,7 @@ public class ProdutoService {
     }
 
     public Produto salvar(ProdutoDto produtoDto) {
-        Categoria categoria = (Categoria) categoriaRepository.findById(produtoDto.getCategoria()).get();
+        Categoria categoria = categoriaRepository.findById(produtoDto.getCategoria()).get();
         Produto produto = new Produto(
                 produtoDto.getTitulo(),
                 produtoDto.getPreco(),
@@ -42,7 +42,7 @@ public class ProdutoService {
         return produto;
     }
     public Produto atualizar(ProdutoDto produtoDto){
-        Categoria categoria = (Categoria) categoriaRepository.findById(produtoDto.getCategoria()).get();
+        Categoria categoria = categoriaRepository.findById(produtoDto.getCategoria()).get();
         Produto produto = new Produto(
                 produtoDto.getTitulo(),
                 produtoDto.getPreco(),
