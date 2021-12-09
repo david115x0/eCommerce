@@ -6,7 +6,7 @@ INSERT INTO CATEGORIAS (nome) VALUES ('design');
 
 
 
-INSERT INTO PRODUTOS (titulo, preco, descricao, imagem, categoria_id) VALUES ('Front-End',1432.50,'Curso Front-End do zero ao profissional ','https://www.canva.com/design/DAEyFDTC9z0/view',2);
+INSERT INTO PRODUTOS (titulo, preco, descricao, imagem, categoria_id) VALUES ('Front-End',1432.50,'Curso Front-End do zero ao profissional ','https://github.com/Felipe00007/img/blob/main/Black%20Friday.png',2);
 
 INSERT INTO PRODUTOS (titulo, preco, descricao, imagem, categoria_id) VALUES ('BootsTrap',5367.89,'Curso BootsTrap, neste curso você irá contemplar toda a documentação do bootsTrap, com aulas minuciosamente explicadas. Aprenda a utilizar uma das ferramentas mais utilizadas no mercado. ','https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg',2);
 
