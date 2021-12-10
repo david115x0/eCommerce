@@ -24,6 +24,6 @@ INSERT INTO PRODUTOS (titulo, preco, descricao, imagem, categoria_id) VALUES ('J
 
 INSERT INTO PRODUTOS (titulo, preco, descricao, imagem, categoria_id) VALUES ('JavaScript',1800,'Curso javascript nivel avançado. necessário o domínio do nível básico.','https://miro.medium.com/max/724/1*YQgaKfVzK-YpxyT3NYqJAg.png',1);
 
-INSERT INTO PRODUTOS (titulo, preco, descricao, imagem, categoria_id) VALUES ('JavaScript',1800,'Curso javascript nivel avançado. necessário o domínio do nível básico.','https://miro.medium.com/max/724/1*YQgaKfVzK-YpxyT3NYqJAg.png',1);
+INSERT INTO PRODUTOS (titulo, preco, descricao, imagem, categoria_id) VALUES ('JavaScript',1800,'Framework Django, potencialize seus código python com este framework.','https://assets.website-files.com/5b6901669b93d7837e36dc4c/615e1104ffbf5ae592265cc7_python-django.png',1);
 
-INSERT INTO PRODUTOS (titulo, preco, descricao, imagem, categoria_id) VALUES ('python', 5000, 'Curso python focado na automação de seriços web. Este curso comtemplará o nível avaçado, requer o conhecimento em outra linguagens.','https://me315-unicamp.github.io/aulas/imgs_aula11/python-logo.png',1);
+INSERT INTO PRODUTOS (titulo, preco, descricao, imagem, categoria_id) VALUES ('python', 5000, 'Curso de python desenvolva aplicações com essa linguagem super requisitada e adaptável.','https://www.cetax.com.br/blog/wp-content/uploads/2017/10/python6.png',1);
