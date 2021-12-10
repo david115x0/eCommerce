@@ -5,7 +5,6 @@ INSERT INTO CATEGORIAS (nome) VALUES ('frontend');
 INSERT INTO CATEGORIAS (nome) VALUES ('design');
 
 
-
 INSERT INTO PRODUTOS (titulo, preco, descricao, imagem, categoria_id) VALUES ('Front-End',1432.50,'Curso de Front-End de inicío a sua jornada na progrmação ','https://raw.githubusercontent.com/Felipe00007/img/main/Black%20Friday.png',2);
 
 INSERT INTO PRODUTOS (titulo, preco, descricao, imagem, categoria_id) VALUES ('BootsTrap',5367.89,'Curso de BootsTrap, aprenda sobre a otimização do fluxo de trabalho do Bootstrap 5! ','https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg',2);
@@ -20,10 +19,10 @@ INSERT INTO PRODUTOS (titulo, preco, descricao, imagem, categoria_id) VALUES ('A
 
 INSERT INTO PRODUTOS (titulo, preco, descricao, imagem, categoria_id) VALUES ('Java',2500,'Curso de java para iniciantes até o nível avançado. spring boot, Spring Data JPA e mais... ','https://miro.medium.com/max/860/1*JHQ7FFeCX4rU35kid1stIw.jpeg',1);
 
-INSERT INTO PRODUTOS (titulo, preco, descricao, imagem, categoria_id) VALUES ('JavaScript',1200,'Curso javascript para iniciantes em programação.','https://raw.githubusercontent.com/Felipe00007/img/main/Black%20Friday%20(1).png',1);
+INSERT INTO PRODUTOS (titulo, preco, descricao, imagem, categoria_id) VALUES ('Introdução ao JavaScript',1200,'Curso javascript para iniciantes em programação.','https://raw.githubusercontent.com/Felipe00007/img/main/Black%20Friday%20(1).png',1);
 
-INSERT INTO PRODUTOS (titulo, preco, descricao, imagem, categoria_id) VALUES ('JavaScript',1800,'Curso javascript nivel avançado. necessário o domínio do nível básico.','https://miro.medium.com/max/724/1*YQgaKfVzK-YpxyT3NYqJAg.png',1);
+INSERT INTO PRODUTOS (titulo, preco, descricao, imagem, categoria_id) VALUES ('JavaScript Avançado',1800,'Curso javascript nivel avançado. necessário o domínio do nível básico.','https://miro.medium.com/max/724/1*YQgaKfVzK-YpxyT3NYqJAg.png',1);
 
-INSERT INTO PRODUTOS (titulo, preco, descricao, imagem, categoria_id) VALUES ('JavaScript',1800,'Framework Django, potencialize seus código python com este framework.','https://assets.website-files.com/5b6901669b93d7837e36dc4c/615e1104ffbf5ae592265cc7_python-django.png',1);
+INSERT INTO PRODUTOS (titulo, preco, descricao, imagem, categoria_id) VALUES ('Django',1800,'Framework Django, potencialize seus código python com este framework.','https://assets.website-files.com/5b6901669b93d7837e36dc4c/615e1104ffbf5ae592265cc7_python-django.png',1);
 
-INSERT INTO PRODUTOS (titulo, preco, descricao, imagem, categoria_id) VALUES ('python', 5000, 'Curso de python desenvolva aplicações com essa linguagem super requisitada e adaptável.','https://www.cetax.com.br/blog/wp-content/uploads/2017/10/python6.png',1);
+INSERT INTO PRODUTOS (titulo, preco, descricao, imagem, categoria_id) VALUES ('Python', 5000, 'Curso de python desenvolva aplicações com essa linguagem super requisitada e adaptável.','https://www.cetax.com.br/blog/wp-content/uploads/2017/10/python6.png',1);
